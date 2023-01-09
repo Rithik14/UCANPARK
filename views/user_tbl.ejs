@@ -1,0 +1,63 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- /include header -->
+<header id="header" class="animate__animated animate__flipInX">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/usertbl"  ><h2>USER RECORD</h2></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main section -->
+<main id="site-main">
+    <div class="container">
+<!-- /Main section -->
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->
+
+
+<!-- form handling -->
+<form action="/" method="post">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile no</th>
+                <th>Car no</th>
+                <th>DELETE</th>
+
+            </tr>
+            <tbody>
+                <% for(var i=0; i<users.length; i++){ %>
+                    <tr>
+                        <td><%= i+1 %></td>
+                        <td><%= users[i].username%></td>
+                        <td><%= users[i].email%></td>
+                        <td><%= users[i].phone%></td>
+                        <td><%= users[i].carnum%></td>
+                        <td>
+                            <a class="btn border-shadow2 delete" data-id=<%=users[i]._id%> >
+                                <span class="text-gradient"><i class="fas fa-times" ></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+                </tbody>
+        </thead>
+    </table>
+</form>
+</div>
+</main>
+<!-- /form handling -->
+
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->

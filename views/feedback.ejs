@@ -1,0 +1,97 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- /include header -->
+<div class="text-center">
+    <h2 class="text-dark" id="site-main1">We value your feedback</h2>
+    <span class="text-light" id="site-main1">Please complete the following form and help us improve our customer experience.</span>
+ </div>
+<!-- Main section -->
+<main id="site-main">
+    <div class="container">
+        
+<!-- /Main section -->
+
+<!-- add user form-->
+<!-- form handling -->
+<form action="/feedbacks" method="post" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="category1" class="text-light">How satisfied are you with our service ?</label><br>
+            <div class="radio inline">
+            <input type="radio" id="radio-1" name="category1" value="Very satisfied" >
+            <label for="radio-1" class="radio-label">Very satisfied</label>
+            </div>
+            <div class="radio inline">
+            <input type="radio" id="radio-2" name="category1" value="Satisfied" >
+            <label for="radio-2" class="radio-label">Satisfied</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="category1" value="Neutral" >
+                <label for="radio-3" class="radio-label">Neutral</label>
+            </div> 
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="category1" value="UnSatisfied" >
+                <label for="radio-4" class="radio-label">UnSatisfied</label>
+            </div>  
+            </div> 
+            <div class="form-group">
+            <label for="category2" class="text-light">How would you rate overall experience with our service ?</label><br>
+            <div class="radio inline">
+            <input type="radio" id="radio-5" name="category2" value="Very satisfied" >
+            <label for="radio-5" class="radio-label">Very satisfied</label>
+            </div>
+            <div class="radio inline">
+            <input type="radio" id="radio-6" name="category2" value="Satisfied" >
+            <label for="radio-6" class="radio-label">Satisfied</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-7" name="category2" value="Neutral" >
+                <label for="radio-7" class="radio-label">Neutral</label>
+            </div> 
+            <div class="radio inline">
+                <input type="radio" id="radio-8" name="category2" value="UnSatisfied" >
+                <label for="radio-8" class="radio-label">UnSatisfied</label>
+            </div>
+            </div>
+            <div class="form-group">
+            <label for="category3" class="text-light">Would recommend our service to other people ?</label><br>
+            <div class="radio inline">
+            <input type="radio" id="radio-9" name="category3" value="Very satisfied" >
+            <label for="radio-9" class="radio-label">Very satisfied</label>
+            </div>
+            <div class="radio inline">
+            <input type="radio" id="radio-10" name="category3" value="Satisfied" >
+            <label for="radio-10" class="radio-label">Satisfied</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-11" name="category3" value="Neutral" >
+                <label for="radio-11" class="radio-label">Neutral</label>
+            </div> 
+            <div class="radio inline">
+                <input type="radio" id="radio-12" name="category3" value="UnSatisfied" >
+                <label for="radio-12" class="radio-label">UnSatisfied</label>
+            </div>
+            </div><br>
+            <div class="form-group">
+                <label for="email" class="text-light">Email</label>
+                <input type="email" name="email" class="form-control" required placeholder="Email*">
+            </div>
+            <div class="form-group">
+                <label for="message" class="text-light">Tell us how we can improve</label>
+                <textarea name="message" id="Message" cols="100" placeholder="Your Message to us" rows="8"></textarea>
+            </div>
+        <br>
+       <div class="form-group" id="update_user">
+       <button type="submit" class="btn text-white update" >Save</button>
+       </div>
+   </div>
+   <br><br>
+   </form>
+
+
+</div>
+</main>
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->

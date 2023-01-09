@@ -1,0 +1,52 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- /include header -->
+<header id="header" class="animate__animated animate__flipInX">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/" ><h2> VEHICLE RECORD</h2></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main section -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient user1">New User<i class="fa-solid fa-user"></i></span>
+            </a>
+         </div><br>
+<!-- /Main section -->
+
+<!-- form handling -->
+<form action="/" method="post">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Parking ID</th>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Vech Category</th>
+                <th>Company</th>
+                <th>Reg No.</th>
+                <th>In Time</th>
+                <th>Out Time</th>
+                <th>Parking Charge</th>
+                <th>Action</th>
+            </tr>
+            <%- include('include/_show')%>
+        </thead>
+    </table>
+</form>
+</div>
+</main>
+<!-- /form handling -->
+
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->

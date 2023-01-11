@@ -1,26 +1,29 @@
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(250, 238, 72) ;
+    background-color:#DBE2EF ;
   }
   
   .topnav {
     overflow: hidden;
-    background-color:rgb(250, 238, 72) ;
+    padding-top: 1em;
+    background-color:#112D4E;
   }
   
   .topnav a {
     float: left;
-    color: rgb(16, 14, 97);
+    color: #DBE2EF ;
     font-size: 30px;;
     text-align: center;
-    padding: 20px 16px;
+    padding: 15px 20px;
     text-decoration: none;
     font-size: 17px;
   }
   
   .topnav a.active {
-    color: rgb(16, 14, 97);
+    color: #DBE2EF ;
     font-size: 30px;
   }
   
@@ -28,20 +31,16 @@ body {
     float: right;
   }
   .navbtn1:hover{
-  color:rgb(250, 238, 72);
-  background-color:rgb(36, 34, 155) ;
-  border-radius: 10px;
+  color:#a6ccfb;
   }
   .navbtn2:hover{
-    color:rgb(250, 238, 72);
-    background-color:rgb(36, 34, 155) ;
-    border-radius: 10px;
+    color:#a6ccfb;
       }
 .image1{
   display: block;
-  margin-top: 13%;
+  margin-top: -2em;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 77%;
   height: 60%;
 }

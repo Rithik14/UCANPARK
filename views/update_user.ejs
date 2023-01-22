@@ -11,7 +11,7 @@
             </div>
          </div>
          <div class="text-center">
-            <h2 class="text-dark">Update User</h2>
+            <h2 class="text-dark">Update Vehicle Record</h2>
             <span class="text-light">Use the below form to update an account</span>
          </div>
 <!-- /Main section -->
@@ -40,11 +40,11 @@
         <div class="form-group">
             <label for="category" class="text-light">Category</label>
             <div class="radio inline">
-            <input type="radio" id="radio-2" name="category" value="Two Wheeler" <%= user.category == 'Two Wheeler'?'checked':''%>>
+            <input type="radio" id="radio-2" name="category" onClick="document.getElementById('bill').value=15" value="Two Wheeler" <%= user.category == 'Two Wheeler'?'checked':''%>>
             <label for="radio-2" class="radio-label">Two Wheeler</label>
             </div>
             <div class="radio inline">
-            <input type="radio" id="radio-3" name="category" value="Four Wheeler" <%= user.category == 'Four Wheeler'?'checked':''%>>
+            <input type="radio" id="radio-3" name="category" onClick="document.getElementById('bill').value=25" value="Four Wheeler" <%= user.category == 'Four Wheeler'?'checked':''%>>
             <label for="radio-3" class="radio-label">Four Wheeler</label>
             </div>  
             <div class="form-group">
@@ -52,8 +52,8 @@
                 <input type="text" name="regno" required pattern="[A-Z]{2}[0-9]{4}" placeholder="XX0000*" value="<%= user.regno %>"/>
             </div>
             <div class="form-group">
-                <label for="outtime" class="text-light">Out Time</label>
-                <input type="hidden" name="charge" value="35" value="<%= user.charge %>">
+                <label for="outtime" class="text-light">Out Time</label> 
+                    <input type="hidden" name="charge" id="bill" value="<%= user.charge %>">
                 <input type="time" name="outtime" value="" class="form-control" placeholder="00:00" value="<%= user.outtime %>">
             </div>
         </div>

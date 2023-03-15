@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>V REC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="topnav">
+        <a class="" href="#"><b></b></a>
+        <a class="active" href="#home"><b>U</b>CAN<b>P</b>ARK</a>
+        <div class="topnav-right">
+          <a class="navbtn" href="/userindex"><b>Home</b></a>
+          <a class="navbtn" href="/contact"><b>Contact us</b></a>
+          <a class="navbtn" href="/feedback"><b>Feedback</b></a>
+          <a class="navbtn" href="/logout"><b>Logout</b></a>
+          <a class="" href="#"><b></b></a>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#112D4E" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,53.3C384,53,480,43,576,74.7C672,107,768,181,864,176C960,171,1056,85,1152,69.3C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+<!-- /include header -->
+<div class="text-center" id="site-main1">
+    <h1 class="text-dark">Contact us</h1>
+    <span class="text-light">Please fill out our form and we'll get in touch shortly.</span>
+ </div>
+<!-- Main section -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/userindex"><i class="fas fa-angle-double-left"></i>go back</a>
+            </div>
+         </div>
+        
+<!-- /Main section -->
+
+<!-- add user form-->
+<form action="/contacts" method="post" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="text" name="name" class="form-control" required placeholder="Name*">
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-light">Email Id</label>
+            <input type="email" name="email" class="form-control" required placeholder="Email Id*">
+        </div>
+        <div class="form-group">
+            <label for="subject" class="text-light">Subject</label>
+            <input type="text" name="subject" class="form-control" required placeholder="Subject*" list="sublist">
+            <datalist id="sublist">
+                <option value="Reservation">
+              </datalist>
+        </div>
+        <div class="form-group">
+            <label for="message" class="text-light">Message</label>
+            <textarea name="message" id="Message" cols="100" placeholder="Your Message to us" rows="8"></textarea>
+        </div>
+        <br>
+       <div class="form-group" id="update_user">
+       <button type="submit" class="btn text-white update" >Save</button>
+       </div>
+   </div>
+   <br><br>
+   </form>
+
+
+</div>
+</main>
+
+<!-- include footer -->
+<%- include('include/_footer')%>

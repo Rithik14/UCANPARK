@@ -1,0 +1,53 @@
+
+
+<!-- form handling -->
+<form action="/api/users" method="post" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="parkno" class="text-light">Parking no</lable>
+            <input type="hidden" name="id" value="">
+            <input type="tel" name="parkno" class="form-control" required pattern="[0-9]{4}" placeholder="0000*">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Owner Name</label>
+            <input type="text" name="name" class="form-control" required placeholder="Name*">
+        </div>
+        <div class="form-group">
+            <label for="contactno" class="text-light">Contact no</label>
+            <input type="tel" class="form-control" required placeholder="Mobile number*" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="contactno" />
+        </div>
+        <!-- <div class="form-group">
+            <label for="company" class="text-light">Vechile company</label>
+            <input type="text" name="company" class="form-control" required placeholder="Vec Name*">
+        </div> -->
+        <div class="form-group">
+            <label for="category" class="text-light">Category</label>
+            <div class="radio inline">
+            <input type="radio" id="radio-2" name="category" onClick="document.getElementById('bill').value=15" value="Two Wheeler" >
+            <label for="radio-2" class="radio-label"><b>2</b> Wheeler</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="category" onClick="document.getElementById('bill').value=20" value="Three Wheeler" >
+                <label for="radio-3" class="radio-label"><b>3</b> Wheeler</label>
+            </div>
+            <div class="radio inline">
+            <input type="radio" id="radio-4" name="category" onClick="document.getElementById('bill').value=25" value="Four Wheeler" >
+            <label for="radio-4" class="radio-label"><b>4</b> Wheeler</label>
+            </div>  
+            <div class="form-group">
+                <label for="regno" class="text-light">Reg no</label>
+                <input type="text" name="regno" required pattern="[A-Z]{2}[0-9]{2}-[A-Z]{2}[0-9]{4}" placeholder="XX00-YY0000*" />
+            </div>
+            <div class="form-group">
+                <!-- <label for="intime" class="text-light">In Time</label> -->
+                <input type="hidden" name="charge" id="bill" value="">
+                <!-- <input type="time" name="intime" value="" class="form-control" placeholder="00:00"> -->
+            </div>
+        </div>
+        <br>
+       <div class="form-group" id="update_user">
+       <button type="submit" class="btn text-white update" >Save</button>
+       </div>
+   </div>
+   <br><br>
+   </form>

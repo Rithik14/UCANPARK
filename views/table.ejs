@@ -1,0 +1,80 @@
+<!-- include header -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>UCANPARK | Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://www.dafontfree.net/embed/c2lmb25uLWJhc2ljLW91dGxpbmUmZGF0YS80Ni9zLzYxODY3L1NJRk9OTl9CQVNJQ19PVVRMSU5FLm90Zg" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="topnav">
+        <a class="" href="#"><b></b></a>
+        <a class="active" href="#home"><b>U</b>CAN<b>P</b>ARK</a>
+        <div class="topnav-right">
+          <a class="navbtn" href="/table"><b>Home</b></a>
+          <a class="navbtn" href="/usertbl"><b>Users</b></a>
+          <a class="navbtn" href="/admintbl"><b>Admins</b></a>
+          <!-- <a class="navbtn" href="/contact"><b>Contact us</b></a> -->
+          <a class="navbtn" href="/contacttbl"><b>Contact table</b></a>
+          <a class="navbtn" href="/feedbacktbl"><b>Feedback</b></a>
+          <a class="navbtn" href="/logout"><b>Logout</b></a>
+          <a class="" href="#"><b></b></a>
+        </div>
+      </div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#112D4E" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,53.3C384,53,480,43,576,74.7C672,107,768,181,864,176C960,171,1056,85,1152,69.3C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  </svg>
+<!-- /include header -->
+<header id="header" class="animate__animated animate__flipInX">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="#" ><h2> VEHICLE RECORD</h2></a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Main section -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient user1">New User<i class="fa-solid fa-user"></i></span>
+            </a>
+         </div><br><br><br><br><br><br>
+<!-- /Main section -->
+
+<!-- form handling -->
+<form action="/" method="post">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Parking ID</th>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Category</th>
+                <th>Reg No.</th>
+                <th>In Time</th>
+                <th>Out Time</th>
+                <th>Parking Charge</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <%- include('include/_show')%>
+        </thead>
+    </table>
+    <br>
+</form>
+</div>
+</main>
+<!-- /form handling -->
+
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->

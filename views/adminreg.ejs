@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Login</title>
+<link rel="stylesheet" href="css/style3.css">    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Admin Login</div>
+          <div class="title signup">Admin Signup</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="/adminlog" method="post" class="login"><br><br>
+              <div class="field">
+                <input type="text" placeholder="Username" name="username" id="username" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" id="password"  name="password" required>
+              </div>
+              <!-- <div class="pass-link"><a href="#">Forgot password?</a></div> -->
+              <br>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" id="submitDetails"
+                name="submitDetails" value="Submit" >
+              </div>
+              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+            </form>
+            <form action="/adreg" class="signup" method="post">
+              <div class="field">
+                <input class="box" type="text" name="adminid" id="adminid"
+			placeholder="  Admin Id" required autocomplete="off" pattern="[A-Z,a-z]{5}[0-9]{3}" oninvalid="this.setCustomValidity('Please enter id in uppercase')"
+      onvalid="this.setCustomValidity('')"/>
+              </div>
+              <div class="field">
+                <input class="box" type="text" name="username" id="name"
+			placeholder="  Name" required autocomplete="off"/>
+              </div>
+              <div class="field">
+                <input class="box" type="email" name="email" id="email"
+			placeholder="  E-Mail " required autocomplete="off"/><br>
+              </div>
+              <div class="field">
+                <input class="box" type="password" name="password"
+			id="password" placeholder="  Password " required autocomplete="off"/>
+              </div>
+              <div class="field">
+                <input class="box" type="tel" name="phone" id="phone"
+                placeholder="  Phone Number " required autocomplete="off"/> 
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" id="submitDetails"
+			name="submitDetails" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

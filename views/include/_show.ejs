@@ -1,0 +1,28 @@
+<tbody>
+<% for(var i=0; i<users.length; i++){ %>
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= users[i].parkno %></td>
+        <td><%= users[i].name%></td>
+        <td><%= users[i].contactno%></td>
+        <td><%= users[i].category%></td>
+        <td><%= users[i].regno%></td>
+        <td><%= users[i].createdAt%></td>
+        <!-- if(<% users[i].createdAt === users[i].updatedAt%>){
+            <td><%= users[i].createdAt - users[i].updatedAt %></td>
+        }else { -->
+        <td><%= users[i].updatedAt%></td>
+        <!-- }  -->
+        <td><%= users[i].charge%></td>
+        <td><br>
+            <a href="/update-user?id=<%=users[i]._id%>" class="btn border-shadow1 update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a></td>
+            <td><br>
+            <a class="btn border-shadow2 delete" data-id=<%=users[i]._id%> >
+                <span class="text-gradient"><i class="fas fa-times" ></i></span>
+            </a>
+        </td>
+    </tr>
+<% } %>
+</tbody>
